@@ -23,6 +23,40 @@
         <a href="blog.html">Blog</a>
     </div>
 </div>
+
+<div class="app">
+
+    <div class="menu-toggle">
+        <div class="hamburger">
+            <span></span>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <nav class="menu">
+            <a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/" target="_blank" class="menu-item">Course and Examination Regulations</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank" class="menu-item">HBO-ICT Implementation Regulations</a>
+            <a href="https://learn.hz.nl/my/" target="_blank" class="menu-item">HZ Learn</a>
+            <a href="https://teams.microsoft.com/_?tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c#/school/teams-grid/General?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&ctx=teamsGrid" target="_blank" class="menu-item">HZ Teams</a>
+            <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
+            <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1>Hello, my name is Domas Jonaitis, and welcome to my website!</h1>
+    </main>
+</div>
+
+<script>
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    menu_toggle.addEventListener('click', () => {
+        menu_toggle.classList.toggle('is-active');
+        sidebar.classList.toggle('is-active');
+    })
+</script>
 </body>
 
 </html>
