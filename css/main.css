@@ -7,19 +7,31 @@
 
 .picture {
     float: left;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 50vh;
+    max-height: 50vh;
     padding: 2rem;
     margin: 2rem;
     margin-top: 2rem;
 }
 
 .hello {
-    
     max-width: 50vh;
     max-height: 50vh;
     display: block;
     margin: auto;
+}
+
+body > div.app > main > h1 > div {
+    display: flex;
+    justify-content: center;
+}
+
+body > div.app > main > h1 > div > img:nth-child(2) {
+    height: 10%;
+}
+
+body > div.app > main > h1 > div > img:nth-child(3) {
+    height: 10%;
 }
 
 .topnav {
