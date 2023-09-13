@@ -103,6 +103,7 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     max-width: 250px;;
     padding: 2rem 1rem;
     background-color: #2e3047;
+    margin-left: -48px;;
 }
 
 .sidebar .menu {
