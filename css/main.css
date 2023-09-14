@@ -72,7 +72,7 @@ body>div.app>main>h1>div {
 
 .app {
     display: flex;
-    min-height: 100vh;
+    min-height: 95vh;
 }
 
 .sidebar {
