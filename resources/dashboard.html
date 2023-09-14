@@ -6,194 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/main.css">
-</head>
 
-<body>
-
-<div class="logo-image">
-    <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
-</div>
-
-<div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <div class="topnav-right">
-        <a href="profile.html">Profile</a>
-        <a class="dashboard" href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
-    </div>
-</div>
-</body>
-
-<div class="app">
-
-    <div class="menu-toggle">
-        <div class="hamburger">
-            <span></span>
-        </div>
-    </div>
-
-    <aside class="sidebar">
-        <nav class="menu">
-            <ul>
-                <a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/" target="_blank" class="menu-item">Course and Examination Regulations</a>
-                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank" class="menu-item">HBO-ICT Implementation Regulations</a>
-                <a href="https://learn.hz.nl/my/" target="_blank" class="menu-item">HZ Learn</a>
-                <a href="https://teams.microsoft.com/_?tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c#/school/teams-grid/General?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&ctx=teamsGrid" target="_blank" class="menu-item">HZ Teams</a>
-                <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
-                <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="content">
     <style>
         table {
             border-collapse: collapse;
             width: 100%;
+            margin: 4vh;
         }
 
         th {
             border: 2px solid #000000;
             background-color: #dddddd;
             text-align: center;
-            padding: 8px;
+            padding: 2px;
         }
 
         td {
             border: 2px solid #000000;
             text-align: center;
-            padding: 8px;
+            padding: 2px;
         }
-    </style>        
+    </style>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['line']
+        });
+        google.charts.setOnLoadCallback(drawChart);
 
-    <table>
-        <tr>
-            <th>Quartile</th>
-            <th>Course</th>
-            <th>EC</th>
-            <th>Exam</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Program- & Career Orientation</td>
-            <td>2.5</td>
-            <td>Assessment website</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Computer Science Basics</td>
-            <td>5</td>
-            <td>Written exam</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Programming Basics</td>
-            <td>5</td>
-            <td>Case study exam</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="2">2</td>
-            <td rowspan="2">Object-Oriented Programming</td>
-            <td rowspan="2">10</td>
-            <td>Group assignment</td>
-            <td></td>  
-        </tr>
-            <td>Case study exam</td>
-            <td></td>
-        <tr>
-            <td rowspan="4">3</td>
-            <td rowspan="4">Framework project 1</td>
-            <td rowspan="4">10</td>
-            <td>On-site case study exam</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Database exam</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Group presentation on project result</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Group portfolio with individual <br> elements on requirements</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="3">4</td>
-            <td rowspan="3">Framework Project 2</td>
-            <td rowspan="3">10</td>
-            <td>Final delivery</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Report of acceptance tests <br> and optional assessments</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>IT Development portfolio</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1-4</td>
-            <td>Personal Professional <br> Development Exploration</td>
-            <td>12.5</td>
-            <td>Criterium focused interview</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3/4</td>
-            <td>Business IT Consultancy basics</td>
-            <td>2.5</td>
-            <td>Video</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>IT Personality - projectweek 1</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td> IT Personality International week</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>IT Personality 1</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>IT Personality 2</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td></td>
-        </tr>
-    </table>
-    </main>
-</div>
+        function drawChart() {
 
-<script>
-    const menu_toggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', '1st Year');
+            data.addColumn('number', 'Study Credits');
+            data.addColumn('number', 'NBSA');
 
-    menu_toggle.addEventListener('click', () => {
-        menu_toggle.classList.toggle('is-active');
-        sidebar.classList.toggle('is-active');
-    })
-</script>
+            data.addRows([
+                [1, 2.5, 45],
+                [2, 7.5, 45],
+                [3, 12.5, 45],
+                [4, 22.5, 45],
+                [5, 32.5, 45],
+                [6, 42.5, 45],
+                [7, 55, 45],
+                [8, 57.5, 45],
+                [9, 58.75, 45],
+                [10, 60, 45]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'NBSA boundary',
+                    subtitle: 'Negative Binding Study Advice (NBSA)'
+                },
+                width: 900,
+                height: 500
+            };
+
+            var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+            chart.draw(data, google.charts.Line.convertOptions(options));
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div class="logo-image">
+            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+        </div>
+        <a class="active" href="index.html">Home</a>
+        <div class="topnav-right">
+            <a href="profile.html">Profile</a>
+            <a class="backcolor" href="dashboard.html">Dashboard</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <div class="app">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <nav class="menu">
+                <ul>
+                    <a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/"
+                        target="_blank" class="menu-item">Course and Examination Regulations</a>
+                    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+                        target="_blank" class="menu-item">HBO-ICT Implementation Regulations</a>
+                    <a href="https://learn.hz.nl/my/" target="_blank" class="menu-item">HZ Learn</a>
+                    <a href="https://teams.microsoft.com/_?tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c#/school/teams-grid/General?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&ctx=teamsGrid"
+                        target="_blank" class="menu-item">HZ Teams</a>
+                    <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Quartile</th>
+                        <th>Course</th>
+                        <th>EC</th>
+                        <th>Exam</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Program- & Career Orientation</td>
+                        <td>2.5</td>
+                        <td>Assessment website</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Science Basics</td>
+                        <td>5</td>
+                        <td>Written exam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Programming Basics</td>
+                        <td>5</td>
+                        <td>Case study exam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td rowspan="2">Object-Oriented Programming</td>
+                        <td rowspan="2">10</td>
+                        <td>Group assignment</td>
+                        <td></td>
+                    </tr>
+                    <td>Case study exam</td>
+                    <td></td>
+                    <tr>
+                        <td rowspan="4">3</td>
+                        <td rowspan="4">Framework project 1</td>
+                        <td rowspan="4">10</td>
+                        <td>On-site case study exam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Database exam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Group presentation on project result</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Group portfolio with individual elements on requirements</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">4</td>
+                        <td rowspan="3">Framework Project 2</td>
+                        <td rowspan="3">10</td>
+                        <td>Final delivery</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Report of acceptance tests and optional assessments</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>IT Development portfolio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1-4</td>
+                        <td>Personal Professional Development Exploration</td>
+                        <td>12.5</td>
+                        <td>Criterium focused interview</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Business IT Consultancy basics</td>
+                        <td>2.5</td>
+                        <td>Video</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>IT Personality 1</td>
+                        <td>1.25</td>
+                        <td>Portfolio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>IT Personality 2</td>
+                        <td>1.25</td>
+                        <td>Portfolio</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="linechart_material" style="width: 900px; height: 500px"></div>
+        </main>
+
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        })
+    </script>
+</body>
 
 </html>

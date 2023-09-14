@@ -21,25 +21,25 @@
     margin: auto;
 }
 
-body > div.app > main > h1 > div {
+body>div.app>main>h1>div {
     display: flex;
     justify-content: center;
 }
 
-body > div.app > main > h1 > div > img:nth-child(2) {
+body>div.app>main>h1>div>img:nth-child(2) {
     height: 10%;
 }
 
-body > div.app > main > h1 > div > img:nth-child(3) {
+body>div.app>main>h1>div>img:nth-child(3) {
     height: 10%;
 }
 
 .topnav {
     background-color: #333;
     overflow: hidden;
-    top:0;
+    top: 0;
     position: sticky;
-    width: 100;
+    width: 100%;
 }
 
 .topnav a {
@@ -65,22 +65,7 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     float: right;
 }
 
-.topnav a.blog {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.faq {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.dashboard {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.profile {
+.topnav a.backcolor {
     background-color: #ddd;
     color: black;
 }
@@ -100,10 +85,16 @@ body > div.app > main > h1 > div > img:nth-child(3) {
 .sidebar {
     flex: 1 1 0;
     min-width: 250px;
-    max-width: 250px;;
+    max-width: 250px;
+    ;
     padding: 2rem 1rem;
     background-color: #2e3047;
-    margin-left: -48px;;
+    float: left;
+}
+
+.table {
+    margin: 8rem;
+    margin-left: 13rem;
 }
 
 .sidebar .menu {
@@ -141,6 +132,10 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     margin: 2rem;
 }
 
+#linechart_material {
+    padding-left: 4rem;
+}
+
 .menu-toggle {
     display: none;
     position: fixed;
@@ -161,9 +156,9 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     width: 32px;
 }
 
-.hamburger > span,
-.hamburger > span::before,
-.hamburger > span::after {
+.hamburger>span,
+.hamburger>span::before,
+.hamburger>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -173,24 +168,26 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     transition-duration: .25s;
 }
 
-.hamburger > span::before {
+.hamburger>span::before {
     content: '';
     top: -8px;
 }
 
-.hamburger > span::after {
+.hamburger>span::after {
     content: '';
     top: 8px;
 }
 
-.menu-toggle.is-active .hamburger > span {
+.menu-toggle.is-active .hamburger>span {
     transform: rotate(45deg);
 }
-.menu-toggle.is-active .hamburger > span::before {
+
+.menu-toggle.is-active .hamburger>span::before {
     top: 0;
     transform: rotate(0deg);
 }
-.menu-toggle.is-active .hamburger > span::after {
+
+.menu-toggle.is-active .hamburger>span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -205,9 +202,11 @@ body > div.app > main > h1 > div > img:nth-child(3) {
     .menu-toggle {
         display: block;
     }
+
     .content {
         padding-top: 1rem;
     }
+
     .sidebar {
         position: fixed;
         top: 0;
@@ -216,6 +215,7 @@ body > div.app > main > h1 > div > img:nth-child(3) {
         width: 100%;
         transition: 0.2s linear;
     }
+
     .sidebar.is-active {
         left: 0;
     }

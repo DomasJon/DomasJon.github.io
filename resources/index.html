@@ -11,71 +11,74 @@
 
 <body>
 
-<div class="logo-image">
-    <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
-</div>
-
-<div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <div class="topnav-right">
-        <a href="profile.html">Profile</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
-    </div>
-</div>
-
-<div class="app">
-
-    <div class="menu-toggle">
-        <div class="hamburger">
-            <span></span>
+    <div class="topnav">
+        <div class="logo-image">
+            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+        </div>
+        <a class="active" href="index.html">Home</a>
+        <div class="topnav-right">
+            <a href="profile.html">Profile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
         </div>
     </div>
 
-    <aside class="sidebar">
-        <nav class="menu">
-            <ul>
-                <a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/" target="_blank" class="menu-item">Course and Examination Regulations</a>
-                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank" class="menu-item">HBO-ICT Implementation Regulations</a>
-                <a href="https://learn.hz.nl/my/" target="_blank" class="menu-item">HZ Learn</a>
-                <a href="https://teams.microsoft.com/_?tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c#/school/teams-grid/General?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&ctx=teamsGrid" target="_blank" class="menu-item">HZ Teams</a>
-                <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
-                <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
-            </ul>
-            
-        </nav>
-    </aside>
+    <div class="app">
 
-    <main class="content">
-        <img src="../img/foto.jpg" class="picture" alt="profile picture">
-        <h1>Hello, my name is Domas Jonaitis, and welcome to my HZ HBO-ICT studies website!</h1>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
 
-        <h2>In the top-right navigation menu - you'll find some information about my persona, and on the left - important study links for me.</h2>
-        
-        <h2>
-        <ul>
-            Also, here are some useful links, if you want to keep in touch with me:
-            <li><a href="https://www.facebook.com/domas.jonaitis/" target="_blank">Facebook</a></li>
-            <li><a href="https://github.com/DomasJon" target="_blank">GitHub</a></li>    
-        </ul>
-        </h2>
-        
-        <img src="../img/hello.jpeg" class="hello" alt="hello">
-    </main>
+        <aside class="sidebar">
+            <nav class="menu">
+                <ul>
+                    <a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/"
+                        target="_blank" class="menu-item">Course and Examination Regulations</a>
+                    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+                        target="_blank" class="menu-item">HBO-ICT Implementation Regulations</a>
+                    <a href="https://learn.hz.nl/my/" target="_blank" class="menu-item">HZ Learn</a>
+                    <a href="https://teams.microsoft.com/_?tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c#/school/teams-grid/General?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&ctx=teamsGrid"
+                        target="_blank" class="menu-item">HZ Teams</a>
+                    <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
+                </ul>
 
-    
-</div>
+            </nav>
+        </aside>
 
-<script>
-    const menu_toggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
+        <main class="content">
+            <img src="../img/foto.jpg" class="picture" alt="profile picture">
+            <h1>Hello, my name is Domas Jonaitis, and welcome to my HZ HBO-ICT studies website!</h1>
 
-    menu_toggle.addEventListener('click', () => {
-        menu_toggle.classList.toggle('is-active');
-        sidebar.classList.toggle('is-active');
-    })
-</script>
+            <h2>In the top-right navigation menu - you'll find some information about my persona, and on the left -
+                important study links for me.</h2>
+
+            <h2>
+                <ul>
+                    Also, here are some useful links, if you want to keep in touch with me:
+                    <li><a href="https://www.facebook.com/domas.jonaitis/" target="_blank">Facebook</a></li>
+                    <li><a href="https://github.com/DomasJon" target="_blank">GitHub</a></li>
+                </ul>
+            </h2>
+
+            <img src="../img/hello.jpeg" class="hello" alt="hello">
+        </main>
+
+
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        })
+    </script>
 
 </body>
 
