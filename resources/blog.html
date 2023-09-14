@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Blog/Post feed</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
 
     <div class="topnav">
         <div class="logo-image">
-            <img src="img/logo.jpg" alt="HZ logo">
+            <img src="../img/logo.jpg" alt="HZ logo">
         </div>
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="../index.html">Home</a>
         <div class="topnav-right">
-            <a href="resources/profile.html">Profile</a>
-            <a href="resources/dashboard.html">Dashboard</a>
-            <a href="resources/faq.html">FAQ</a>
-            <a href="resources/blog.html">Blog</a>
+            <a href="profile.html">Profile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="faq.html">FAQ</a>
+            <a class="backcolor" href="blog.html">Blog</a>
         </div>
     </div>
 
@@ -45,33 +44,32 @@
                     <a href="https://hz.osiris-student.nl/#/home" target="_blank" class="menu-item">MyHZ</a>
                     <a href="https://github.com/HZ-HBO-ICT" target="_blank" class="menu-item">HZ HBO-ICT GitHub</a>
                 </ul>
-
             </nav>
         </aside>
 
         <main class="content">
-            <img src="img/foto.jpg" class="picture" alt="profile picture">
-            <h1>Hello, my name is Domas Jonaitis, and welcome to my HZ HBO-ICT studies website!</h1>
-
-            <h2>In the top-right navigation menu - you'll find some information about my persona, and on the left -
-                important study links for me.</h2>
-
-            <h2>
-                <ul>
-                    Also, here are some useful links, if you want to keep in touch with me:
-                    <li><a href="https://www.facebook.com/domas.jonaitis/" target="_blank">Facebook</a></li>
-                    <li><a href="https://github.com/DomasJon" target="_blank">GitHub</a></li>
-                </ul>
-            </h2>
-
-            <img src="img/hello.jpeg" class="hello" alt="hello">
+            <ul style="margin-left: 4rem;">
+                <li>
+                    <h2 class="list"><a href="posts/experience.html">Programming Experience</a></h2>
+                </li>
+                <li>
+                    <h2 class="list"><a href="posts/studychoice.html">Study Choice</a></h2>
+                </li>
+                <li>
+                    <h2 class="list"><a href="posts/swot.html">SWOT</a></h2>
+                </li>
+                
+                <li>
+                    <h2 class="list"><a href="posts/feedback.html">First Feedback</a></h2>
+                </li>
+                <li>
+                    <h2 class="list"><a href="https://medium.com/better-programming/advices-from-a-software-engineer-with-8-years-of-experience-8df5111d4d55" target="_blank">Advice From a Software Engineer With 8 Years of Experience</a></h2>
+                </li>
+            </ul>
         </main>
-
-
     </div>
 
-    <script src="js/menu.js"></script>
-
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

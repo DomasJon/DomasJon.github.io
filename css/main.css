@@ -116,8 +116,22 @@ body>div.app>main>h1>div {
     padding: 2rem;
 }
 
+.content h2.list {
+    padding: 1rem;
+}
+
 .content li {
     margin: 2rem;
+}
+
+.content p {
+    padding: 10px;
+}
+
+.content a.back {
+    display: flex;
+    text-decoration: underline;
+    padding: 1rem;
 }
 
 .menu-toggle {
