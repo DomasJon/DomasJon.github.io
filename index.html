@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
     <div class="topnav">
         <div class="logo-image">
-            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+            <img src="img/logo.jpg" alt="HZ logo">
         </div>
         <a class="active" href="index.html">Home</a>
         <div class="topnav-right">
-            <a href="profile.html">Profile</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
+            <a href="resources/profile.html">Profile</a>
+            <a href="resources/dashboard.html">Dashboard</a>
+            <a href="resources/faq.html">FAQ</a>
+            <a href="resources/blog/blog.html">Blog</a>
         </div>
     </div>
 
@@ -50,7 +50,7 @@
         </aside>
 
         <main class="content">
-            <img src="../img/foto.jpg" class="picture" alt="profile picture">
+            <img src="img/foto.jpg" class="picture" alt="profile picture">
             <h1>Hello, my name is Domas Jonaitis, and welcome to my HZ HBO-ICT studies website!</h1>
 
             <h2>In the top-right navigation menu - you'll find some information about my persona, and on the left -
@@ -64,21 +64,13 @@
                 </ul>
             </h2>
 
-            <img src="../img/hello.jpeg" class="hello" alt="hello">
+            <img src="img/hello.jpeg" class="hello" alt="hello">
         </main>
 
 
     </div>
 
-    <script>
-        const menu_toggle = document.querySelector('.menu-toggle');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_toggle.addEventListener('click', () => {
-            menu_toggle.classList.toggle('is-active');
-            sidebar.classList.toggle('is-active');
-        })
-    </script>
+    <script src="js/menu.js"></script>
 
 </body>
 

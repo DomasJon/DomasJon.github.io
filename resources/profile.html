@@ -13,14 +13,14 @@
 
     <div class="topnav">
         <div class="logo-image">
-            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+            <img src="../img/logo.jpg" alt="HZ logo">
         </div>
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="../index.html">Home</a>
         <div class="topnav-right">
             <a class="backcolor" href="profile.html">Profile</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
+            <a href="blog/blog.html">Blog</a>
         </div>
     </div>
 
@@ -57,24 +57,16 @@
                     <li>I'm from a small country called Lithuania</li>
                 </ul>
                 <div>
-                    <img src="../img/nikis.jpg" width="24%" alt="nikis">
-                    <img src="../img/tim.jpeg" width="34%" alt="Driving Crooner">
-                    <img src="../img/lithuania.png" width="40%" alt="Lithuania">
+                    <img src="../img/nikis.jpg" style="width: 24%" alt="nikis">
+                    <img src="../img/tim.jpeg" style="width: 34%; height: 10%;" alt="Driving Crooner">
+                    <img src="../img/lithuania.png" style="width: 40%; height: 10%;" alt="Lithuania">
                 </div>
 
             </h1>
         </main>
     </div>
 
-    <script>
-        const menu_toggle = document.querySelector('.menu-toggle');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_toggle.addEventListener('click', () => {
-            menu_toggle.classList.toggle('is-active');
-            sidebar.classList.toggle('is-active');
-        })
-    </script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

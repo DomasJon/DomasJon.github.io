@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog/Post feed</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
 
     <div class="topnav">
         <div class="logo-image">
-            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+            <img src="../../img/logo.jpg" alt="HZ logo">
         </div>
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="../../index.html">Home</a>
         <div class="topnav-right">
-            <a href="profile.html">Profile</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="faq.html">FAQ</a>
+            <a href="../profile.html">Profile</a>
+            <a href="../dashboard.html">Dashboard</a>
+            <a href="../faq.html">FAQ</a>
             <a class="backcolor" href="blog.html">Blog</a>
         </div>
     </div>
@@ -48,19 +48,11 @@
         </aside>
 
         <main class="content">
-            <h1>Hello, my name is Domas Jonaitis, and welcome to my website!</h1>
+            <a href="who.html">Study choice</a>
         </main>
     </div>
 
-    <script>
-        const menu_toggle = document.querySelector('.menu-toggle');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_toggle.addEventListener('click', () => {
-            menu_toggle.classList.toggle('is-active');
-            sidebar.classList.toggle('is-active');
-        })
-    </script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

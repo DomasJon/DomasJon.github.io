@@ -75,14 +75,14 @@
 
     <div class="topnav">
         <div class="logo-image">
-            <img src="../css/logo.jpg" width="48px" height="48px" alt="HZ logo">
+            <img src="../img/logo.jpg" alt="HZ logo">
         </div>
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="../index.html">Home</a>
         <div class="topnav-right">
             <a href="profile.html">Profile</a>
             <a class="backcolor" href="dashboard.html">Dashboard</a>
             <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
+            <a href="blog/blog.html">Blog</a>
         </div>
     </div>
 
@@ -215,20 +215,12 @@
                 </table>
             </div>
 
-            <div id="linechart_material" style="width: 900px; height: 500px"></div>
+            <div id="linechart_material" style="width: 900px; height: 510px; padding-left:4rem"></div>
         </main>
 
     </div>
 
-    <script>
-        const menu_toggle = document.querySelector('.menu-toggle');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_toggle.addEventListener('click', () => {
-            menu_toggle.classList.toggle('is-active');
-            sidebar.classList.toggle('is-active');
-        })
-    </script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
