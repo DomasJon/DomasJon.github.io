@@ -141,6 +141,10 @@ body>div.app>main>h1>div {
     margin-left: 1rem;
 }
 
+.body {
+    overflow-y: hidden;
+}
+
 /*everything below is for responsive mobile design sidebar*/
 
 .menu-toggle {
