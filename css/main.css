@@ -72,17 +72,16 @@ body>div.app>main>h1>div {
 
 .app {
     display: flex;
-    min-height: 95vh;
 }
 
 .sidebar {
     flex: 1 1 0;
     min-width: 250px;
     max-width: 250px;
-    ;
     padding: 2rem 1rem;
     background-color: #2e3047;
     float: left;
+    min-height: 95vh;
 }
 
 .sidebar .menu {
@@ -125,14 +124,24 @@ body>div.app>main>h1>div {
 }
 
 .content p {
-    padding: 10px;
+    padding: 15px;
 }
 
 .content a.back {
     display: flex;
     text-decoration: underline;
     padding: 1rem;
+    width: 70px;
 }
+
+.content img.experience {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 1rem;
+}
+
+/*everything below is for responsive mobile design sidebar*/
 
 .menu-toggle {
     display: none;

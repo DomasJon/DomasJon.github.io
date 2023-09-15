@@ -1,3 +1,5 @@
+//responsive mobile design sidebar
+
 const menu_toggle = document.querySelector('.menu-toggle');
 const sidebar = document.querySelector('.sidebar');
 
