@@ -145,6 +145,59 @@ body>div.app>main>h1>div {
     overflow-y: hidden;
 }
 
+/* Accordion CSS for FAQ page down below */
+
+section {
+    padding-left: 6rem;
+    flex-direction: column;
+}
+
+.faq {
+    max-width: 90%;
+    margin-top: 2rem;
+    border-bottom: 2px solid #000000;
+    cursor: pointer
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.1s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /*everything below is for responsive mobile design sidebar*/
 
 .menu-toggle {

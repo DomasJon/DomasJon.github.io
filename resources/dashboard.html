@@ -26,6 +26,9 @@
             text-align: center;
             padding: 2px;
         }
+
+        #title {text-align: center;}
+        #linechart_material {width: 900px; height: 510px; padding-left:4rem}
     </style>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -112,7 +115,7 @@
 
         <main class="content">
 
-            <h1 style="text-align: center;">1st year course propaedeutic phase</h1>
+            <h1 id="title">1st year course propaedeutic phase</h1>
 
             <div class="table">
                 <table>
@@ -151,8 +154,10 @@
                         <td>Group assignment</td>
                         <td></td>
                     </tr>
-                    <td>Case study exam</td>
-                    <td></td>
+                    <tr>
+                        <td>Case study exam</td>
+                        <td></td>
+                    </tr> 
                     <tr>
                         <td rowspan="4">3</td>
                         <td rowspan="4">Framework project 1</td>
@@ -218,7 +223,7 @@
                 </table>
             </div>
 
-            <div id="linechart_material" style="width: 900px; height: 510px; padding-left:4rem"></div>
+            <div id="linechart_material"></div>
         </main>
 
     </div>
